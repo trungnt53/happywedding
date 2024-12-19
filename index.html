@@ -4417,13 +4417,12 @@
     </div>
 
     <!-- Trình phát nhạc được ẩn -->
-    <audio id="musicPlayer" loop="" autoplay src="public/mp3/perfect.mp3"></audio>
+    <audio id="musicPlayer" src="public/mp3/perfect.mp3"></audio>
 
     <script>
         var musicPlayer = document.getElementById("musicPlayer");
         var playPauseButton = document.querySelector(".tdk-music");
-        var isPlaying = true; // Ban đầu là không đang phát
-        playPauseButton.classList.add("playing");
+        var isPlaying = false; // Ban đầu là không đang phát
 
         // Hàm để bật hoặc tạm dừng trình phát nhạc và thay đổi hình ảnh của nút
         function toggleMusic() {
@@ -4439,11 +4438,9 @@
     </script>
     <script>
         // Đặt hàm toggleMusic() vào hàm setTimeout() để chạy sau 3 giây
-        // setTimeout(function() {
-        //     toggleMusic();
-        // }, 3000);
-        toggleMusic();
-        toggleMusic();
+        setTimeout(function() {
+            toggleMusic();
+        }, 3000);
     </script>
 </head>
 
