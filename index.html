@@ -4335,7 +4335,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('public/images/preload.jpeg');
+            background: url('https://w.ladicdn.com/s768x890/5c728619c417ab07e5194baa/istockphoto-1370544962-612x612-20240609095545-gdg85.jpg');
             background-size: cover;  
             display: flex;
             align-items: center;
@@ -4345,16 +4345,14 @@
         }
 
         #preloader h1 {
-            font-size: 3rem;
-            color: white;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             animation: fadeIn 2s ease-in-out infinite;
 
             font-family: VVRNIFZpYVyblKRidGY;
-            font-size: 60px;
+            font-size: clamp(24px, 8vw, 60px);  /* Điều chỉnh font-size từ 24px đến 60px, dựa trên chiều rộng viewport */
             font-style: italic;
             line-height: 1.2;
-            color: rgb(255, 255, 255);
+            color: rgb(139, 91, 19);
             text-align: center;
         }
 
@@ -4402,17 +4400,19 @@
         .btn {
             margin-top: 20px;
             padding: 10px 20px;
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: white;
-            background-color: #ff6f61;
+            background-color: rgb(123, 79, 13);
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            border-radius: 10px;    
+            font-family: inherit;
         }
 
         .btn:hover {
-            background-color: #ff4a3b;
+            background-color: rgb(123, 79, 13);
         }
     </style>
     <meta charset="UTF-8">
